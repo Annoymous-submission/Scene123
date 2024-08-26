@@ -353,166 +353,195 @@
 </section>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Scenes Generated from Text Prompts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <style>
+    .demo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .demo-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; /* 控制文本与视频之间的间距 */
+    }
+
+    .demo-text {
+      width: 150px; /* 设置固定宽度以确保文本居中 */
+      text-align: center;
+    }
+
+    .demo-video {
+      flex: 1;
+    }
+
+    .demo-video video {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title has-text-centered">Results</h2>
       <h3 class="subtitle has-text-centered">3D Scenes Generated from Text Prompts</h3>
-      <div class="columns is-multiline is-mobile">
-        
-        <!-- First Row of Demos -->
+      
+      <!-- First Row of Demos -->
+      <div class="columns">
         <!-- Demo 1 -->
         <div class="column is-one-third">
-          <div class="columns is-mobile is-vcentered">
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
+          <div class="demo-container">
+            <div class="demo-content">
+              <div class="demo-video">
                 <video controls>
                   <source src="static/videos/video7.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-              </figure>
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <p>A DSLR photo of a cyberpunk style bedroom, cyberpunk style…</p>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
+              </div>
+              <div class="demo-text">
+                <p>A DSLR photo of a cyberpunk style bedroom, cyberpunk style…</p>
+              </div>
+              <div class="demo-video">
                 <video controls>
                   <source src="static/videos/depthvideo7.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-              </figure>
+              </div>
             </div>
           </div>
         </div>
         
         <!-- Demo 2 -->
         <div class="column is-one-third">
-          <div class="columns is-mobile is-vcentered">
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
+          <div class="demo-container">
+            <div class="demo-content">
+              <div class="demo-video">
                 <video controls>
                   <source src="static/videos/video8.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-              </figure>
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <p>Cozy living room in Christmas…</p>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
+              </div>
+              <div class="demo-text">
+                <p>Cozy living room in Christmas…</p>
+              </div>
+              <div class="demo-video">
                 <video controls>
                   <source src="static/videos/depthvideo8.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-              </figure>
+              </div>
             </div>
           </div>
         </div>
         
         <!-- Demo 3 -->
         <div class="column is-one-third">
-          <div class="columns is-mobile is-vcentered">
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
+          <div class="demo-container">
+            <div class="demo-content">
+              <div class="demo-video">
                 <video controls>
                   <source src="static/videos/video9.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-              </figure>
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <p>A red and white lighthouse on a cliff…</p>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
+              </div>
+              <div class="demo-text">
+                <p>A red and white lighthouse on a cliff…</p>
+              </div>
+              <div class="demo-video">
                 <video controls>
                   <source src="static/videos/depthvideo9.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-              </figure>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Second Row of Demos -->
+      <!-- Second Row of Demos -->
+      <div class="columns">
         <!-- Demo 4 -->
         <div class="column is-one-third">
-          <div class="columns is-mobile is-vcentered">
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
+          <div class="demo-container">
+            <div class="demo-content">
+              <div class="demo-video">
                 <video controls>
                   <source src="static/videos/video10.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-              </figure>
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <p>A DSLR photo of a living room…</p>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
+              </div>
+              <div class="demo-text">
+                <p>A DSLR photo of a living room…</p>
+              </div>
+              <div class="demo-video">
                 <video controls>
                   <source src="static/videos/depthvideo10.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-              </figure>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Demo 5 -->
         <div class="column is-one-third">
-          <div class="columns is-mobile is-vcentered">
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
+          <div class="demo-container">
+            <div class="demo-content">
+              <div class="demo-video">
                 <video controls>
                   <source src="static/videos/video11.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-              </figure>
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <p>A tropical rainforest with towering trees...</p>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
+              </div>
+              <div class="demo-text">
+                <p>A tropical rainforest with towering trees...</p>
+              </div>
+              <div class="demo-video">
                 <video controls>
                   <source src="static/videos/depthvideo11.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-              </figure>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Demo 6 -->
         <div class="column is-one-third">
-          <div class="columns is-mobile is-vcentered">
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
+          <div class="demo-container">
+            <div class="demo-content">
+              <div class="demo-video">
                 <video controls>
                   <source src="static/videos/video12.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-              </figure>
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <p>A bustling coral reef, alive with the vibrant dance…</p>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
+              </div>
+              <div class="demo-text">
+                <p>A bustling coral reef, alive with the vibrant dance…</p>
+              </div>
+              <div class="demo-video">
                 <video controls>
                   <source src="static/videos/depthvideo12.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-              </figure>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
+
     </div>
   </div>
 </section>
