@@ -174,181 +174,190 @@
   }
 </style>
 
+<style>
+  /* CSS to ensure image and videos align horizontally and are evenly spaced */
+  .demo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Add some space between rows */
+  }
+
+  .media-item {
+    flex: 1; /* Ensures equal space for each item */
+    margin: 0 5px; /* Add some margin between items */
+  }
+
+  .media-item img,
+  .media-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+</style>
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title has-text-centered">Results</h2>
       <h3 class="subtitle has-text-centered">3D Scenes Generated from Diverse Prompts</h3>
-      <div class="columns is-multiline is-mobile">
-        
-        <!-- First Row of Demos -->
+
+      <!-- First Row of Demos -->
+      <div class="demo-container">
         <!-- Demo 1 -->
-        <div class="column is-one-third">
-          <div class="columns is-mobile">
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <img src="static/images/image1.png" alt="Image 1">
-              </figure>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <video controls>
-                  <source src="static/videos/video1.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <video controls>
-                  <source src="static/videos/depthvideo1.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-            </div>
-          </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <img src="static/images/image1.png" alt="Image 1">
+          </figure>
         </div>
-        
-        <!-- Demo 2 -->
-        <div class="column is-one-third">
-          <div class="columns is-mobile">
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <img src="static/images/image2.png" alt="Image 2">
-              </figure>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <video controls>
-                  <source src="static/videos/video2.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <video controls>
-                  <source src="static/videos/depthvideo2.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-            </div>
-          </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <video controls>
+              <source src="static/videos/video1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
         </div>
-
-        <!-- Demo 3 -->
-        <div class="column is-one-third">
-          <div class="columns is-mobile">
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <img src="static/images/image3.png" alt="Image 3">
-              </figure>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <video controls>
-                  <source src="static/videos/video3.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <video controls>
-                  <source src="static/videos/depthvideo3.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-            </div>
-          </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <video controls>
+              <source src="static/videos/depthvideo1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
         </div>
-
-        <!-- Second Row of Demos -->
-        <!-- Demo 4 -->
-        <div class="column is-one-third">
-          <div class="columns is-mobile">
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <img src="static/images/image4.png" alt="Image 4">
-              </figure>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <video controls>
-                  <source src="static/videos/video4.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <video controls>
-                  <source src="static/videos/depthvideo4.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <!-- Demo 5 -->
-        <div class="column is-one-third">
-          <div class="columns is-mobile">
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <img src="static/images/image5.png" alt="Image 5">
-              </figure>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <video controls>
-                  <source src="static/videos/video5.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <video controls>
-                  <source src="static/videos/depthvideo5.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <!-- Demo 6 -->
-        <div class="column is-one-third">
-          <div class="columns is-mobile">
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <img src="static/images/image6.png" alt="Image 6">
-              </figure>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <video controls>
-                  <source src="static/videos/video6.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-            </div>
-            <div class="column is-one-third">
-              <figure class="image is-4by3">
-                <video controls>
-                  <source src="static/videos/depthvideo6.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Demo 2 -->
+      <div class="demo-container">
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <img src="static/images/image2.png" alt="Image 2">
+          </figure>
+        </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <video controls>
+              <source src="static/videos/video2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <video controls>
+              <source src="static/videos/depthvideo2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Demo 3 -->
+      <div class="demo-container">
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <img src="static/images/image3.png" alt="Image 3">
+          </figure>
+        </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <video controls>
+              <source src="static/videos/video3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <video controls>
+              <source src="static/videos/depthvideo3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Second Row of Demos -->
+      <!-- Demo 4 -->
+      <div class="demo-container">
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <img src="static/images/image4.png" alt="Image 4">
+          </figure>
+        </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <video controls>
+              <source src="static/videos/video4.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <video controls>
+              <source src="static/videos/depthvideo4.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Demo 5 -->
+      <div class="demo-container">
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <img src="static/images/image5.png" alt="Image 5">
+          </figure>
+        </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <video controls>
+              <source src="static/videos/video5.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <video controls>
+              <source src="static/videos/depthvideo5.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Demo 6 -->
+      <div class="demo-container">
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <img src="static/images/image6.png" alt="Image 6">
+          </figure>
+        </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <video controls>
+              <source src="static/videos/video6.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+        <div class="media-item">
+          <figure class="image is-4by3">
+            <video controls>
+              <source src="static/videos/depthvideo6.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
 
 
   
