@@ -370,14 +370,9 @@
 
     .demo-content {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px; /* 控制文本与视频之间的间距 */
-    }
-
-    .demo-text {
-      width: 150px; /* 设置固定宽度以确保文本居中 */
-      text-align: center;
+      justify-content: space-between;
+      gap: 10px; /* 控制两个视频之间的间距 */
+      width: 100%;
     }
 
     .demo-video {
@@ -387,6 +382,11 @@
     .demo-video video {
       width: 100%;
       height: auto;
+    }
+
+    .demo-text {
+      text-align: center;
+      margin-top: 10px; /* 添加间距使文本与视频分开 */
     }
   </style>
 </head>
@@ -410,15 +410,15 @@
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div class="demo-text">
-                <p>A DSLR photo of a cyberpunk style bedroom, cyberpunk style…</p>
-              </div>
               <div class="demo-video">
                 <video controls>
                   <source src="static/videos/depthvideo7.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
+            </div>
+            <div class="demo-text">
+              <p>A DSLR photo of a cyberpunk style bedroom, cyberpunk style…</p>
             </div>
           </div>
         </div>
@@ -433,15 +433,15 @@
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div class="demo-text">
-                <p>Cozy living room in Christmas…</p>
-              </div>
               <div class="demo-video">
                 <video controls>
                   <source src="static/videos/depthvideo8.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
+            </div>
+            <div class="demo-text">
+              <p>Cozy living room in Christmas…</p>
             </div>
           </div>
         </div>
@@ -456,15 +456,15 @@
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div class="demo-text">
-                <p>A red and white lighthouse on a cliff…</p>
-              </div>
               <div class="demo-video">
                 <video controls>
                   <source src="static/videos/depthvideo9.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
+            </div>
+            <div class="demo-text">
+              <p>A red and white lighthouse on a cliff…</p>
             </div>
           </div>
         </div>
@@ -482,15 +482,15 @@
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div class="demo-text">
-                <p>A DSLR photo of a living room…</p>
-              </div>
               <div class="demo-video">
                 <video controls>
                   <source src="static/videos/depthvideo10.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
+            </div>
+            <div class="demo-text">
+              <p>A DSLR photo of a living room…</p>
             </div>
           </div>
         </div>
@@ -505,15 +505,15 @@
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div class="demo-text">
-                <p>A tropical rainforest with towering trees...</p>
-              </div>
               <div class="demo-video">
                 <video controls>
                   <source src="static/videos/depthvideo11.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
+            </div>
+            <div class="demo-text">
+              <p>A tropical rainforest with towering trees...</p>
             </div>
           </div>
         </div>
@@ -528,15 +528,15 @@
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div class="demo-text">
-                <p>A bustling coral reef, alive with the vibrant dance…</p>
-              </div>
               <div class="demo-video">
                 <video controls>
                   <source src="static/videos/depthvideo12.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
+            </div>
+            <div class="demo-text">
+              <p>A bustling coral reef, alive with the vibrant dance…</p>
             </div>
           </div>
         </div>
@@ -546,17 +546,12 @@
   </div>
 </section>
 
-
-
-
-  
 </body>
 </html>
 
 
+
   
-
-
 <!-- BibTex citation -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
